@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:elevation="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/title_film"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"
+            android:paddingLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="14sp"
+            android:textColor="@color/colorGrey"
+            android:paddingLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:id="@+id/txtFilmDesc"/>
+
+        <ImageView
+            android:id="@+id/imagePostPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="end"
+            android:layout_marginLeft="12dp">
+
+
+            <ImageButton
+                android:id="@+id/btnFilmLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_like"
+                android:background="@android:color/transparent">
+            </ImageButton>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

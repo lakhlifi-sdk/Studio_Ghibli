@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+       <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:app="http://schemas.android.com/apk/res-auto"
+           xmlns:tools="http://schemas.android.com/tools"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           tools:context=".MainActivity"
+           >
+    <Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Film List"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/regionaire"/>
+
+    </Toolbar>
+           <androidx.coordinatorlayout.widget.CoordinatorLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <FrameLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/frameHomeContainer">
+               </FrameLayout>
+
+               <com.google.android.material.bottomappbar.BottomAppBar
+
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/bottom_app"
+                   android:layout_gravity="bottom"
+                   android:clickable="false"
+                   app:fabAlignmentMode="center"
+                   app:fabCradleRoundedCornerRadius="16dp"
+                   android:theme="@style/AppTheme.BottomAppbar"
+                   app:contentInsetStart="0dp"
+                   app:contentInsetStartWithNavigation="0dp"
+                   android:background="@android:color/transparent">
+
+                   <com.google.android.material.bottomnavigation.BottomNavigationView
+                       android:layout_width="match_parent"
+
+
+                       android:layout_height="wrap_content"
+                       app:fabCradleRoundedCornerRadius="16dp"
+                       android:id="@+id/bottom_nav"
+                       android:background="@color/colorPrimary"
+
+                       android:theme="@style/AppTheme.BottomAppbar"
+                       app:labelVisibilityMode="unlabeled"
+                       app:menu="@menu/menu_main"
+                       />
+
+               </com.google.android.material.bottomappbar.BottomAppBar>
+
+           </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+           <ImageView
+               android:id="@+id/logoImage"
+               android:layout_width="120dp"
+               android:layout_height="120dp"
+               android:layout_centerInParent="true"
+
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.498"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintVertical_bias="0.29" />
+
+       </LinearLayout>
+
